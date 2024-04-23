@@ -64,7 +64,7 @@ moda.esposa <- subset(table(salarios$age), table(salarios$age) == max(table(sala
 moda.esposa.moda <- names(moda.esposa)
 moda.esposa.total <- moda.esposa[1]  
 moda.esposa
-moda.marido.moda <- as.numeric(moda.marido.moda)
+#moda.marido.moda <- as.numeric(moda.marido.moda)
 moda.esposa.moda <- as.numeric(moda.esposa.moda)
 
 # Para a idade dos maridos 
@@ -72,6 +72,7 @@ table(salarios$husage)
 moda.marido <- subset(table(salarios$husage), table(salarios$husage) == max(table(salarios$husage)))
 moda.marido.moda <- names(moda.marido)
 moda.marido.total <- moda.marido[1]    
+moda.marido.moda <- as.numeric(moda.marido.moda)
 moda.marido
 
 # A moda da idade dos maridos eh de 44 anos, com 201 pessoas 
@@ -114,6 +115,5 @@ print(tabela.freq)
 ## justifique sua resposta sobre a escolha.
 ## 2) Lembre-se de que os intervalos de confiança já são mostrados nos resultados dos testes 
 ## citados no item 1 acima.
-
 
 
